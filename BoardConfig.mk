@@ -85,7 +85,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_NO_KERNEL := false
 #TARGET_NO_RECOVERY := true
 #BOARD_USES_RECOVERY_AS_BOOT := true
-#BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 AB_OTA_UPDATER := true
 
 # Crypto
@@ -106,11 +106,14 @@ TW_INCLUDE_NTFS_3G := true
 TW_DEFAULT_BRIGHTNESS := 80
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_EXTRA_LANGUAGES := true
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TW_RECOVERY_ADDITIONAL_RELINK_FILES := ${OUT}/system/lib64/android.hardware.boot@1.0.so
 # MTP will not work until we update it to support ffs
 TW_EXCLUDE_MTP := true
+
+# Asian region languages
+TW_EXTRA_LANGUAGES := true
+# TW_DEFAULT_LANGUAGE := zh_CN
 
 # Debug flags
 #TWRP_INCLUDE_LOGCAT := true
