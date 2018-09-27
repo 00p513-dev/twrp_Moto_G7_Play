@@ -10,9 +10,9 @@ relink()
 
 finish()
 {
-	umount /v
+	#umount /v
 	umount /s
-	rmdir /v
+	#rmdir /v
 	rmdir /s
 	setprop crypto.ready 1
 	exit 0
@@ -61,6 +61,8 @@ mkdir -p /vendor/lib64/hw/
 cp /s/system/lib64/android.hidl.base@1.0.so /sbin/
 cp /s/system/lib64/libicuuc.so /sbin/
 cp /s/system/lib64/libxml2.so /sbin/
+cp /s/system/lib64/libkeymaster1.so /sbin/
+cp /s/system/lib64/libkeymaster_messages.so /sbin/
 
 relink /v/bin/qseecomd
 
@@ -82,6 +84,8 @@ cp /v/lib64/libkeymasterdeviceutils.so /vendor/lib64/
 cp /v/lib64/libkeymasterprovision.so /vendor/lib64/
 cp /v/lib64/libkeymasterutils.so /vendor/lib64/
 cp /v/lib64/hw/bootctrl.sdm660.so /vendor/lib64/hw/
+cp /v/lib64/hw/gatekeeper.sdm660.so /vendor/lib64/hw/
+cp /v/lib64/hw/keystore.sdm660.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.boot@1.0-impl.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so /vendor/lib64/hw/
