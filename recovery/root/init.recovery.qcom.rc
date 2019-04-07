@@ -107,6 +107,8 @@ on boot
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor interactive
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor interactive
 
+    setprop sys.usb.config adb
+
 on init
     setprop ro.hardware.keystore sdm660
     setprop ro.hardware.gatekeeper sdm660
