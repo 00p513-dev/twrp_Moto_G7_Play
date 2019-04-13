@@ -51,3 +51,4 @@ else
 fi
 
 umount /vendor
+setprop drivers.loaded 1

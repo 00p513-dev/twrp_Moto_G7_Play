@@ -118,7 +118,7 @@ on boot
 
     setprop sys.usb.config adb
 
-on init
+on property:drivers.loaded=1
     setprop ro.hardware.keystore sdm660
     setprop ro.hardware.gatekeeper sdm660
     setprop ro.hardware.bootctrl sdm660
