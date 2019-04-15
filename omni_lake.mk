@@ -59,8 +59,8 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-PRODUCT_DEVICE := evert
-PRODUCT_NAME := omni_evert
+PRODUCT_DEVICE := lake
+PRODUCT_NAME := omni_lake
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G6 Plus
+PRODUCT_MODEL := Moto G7 Plus
 PRODUCT_MANUFACTURER := Motorola

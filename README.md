@@ -1,4 +1,4 @@
-# TWRP Device configuration for Motorola Moto G6 Plus
+# TWRP Device configuration for Motorola Moto G7 Plus
 
 ## Device specifications
 
@@ -19,13 +19,13 @@ Front Camera | 8 MP (f/2.2)
 ![Device Picture](https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g6-plus-2.jpg)
 
 ### Kernel Source
-Check here: https://github.com/ixmoe/android_kernel_motorola_sdm630
+Check here: https://github.com/Jleeblanch/kernel_motorola_sdm660
 
 ### How to compile
 
 ```sh
 . build/envsetup.sh
-lunch omni_evert-eng
+lunch omni_lake-eng
 make -j4 recoveryimage
 ```
 ### Copyright
