@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_lake.mk
+    $(LOCAL_DIR)/omni_ocean.mk
