@@ -1,3 +1,3 @@
-# TWRP device tree for the Moto G7 Plus
+# TWRP device tree for the Moto G7 Power
 
-Kernel source: https://github.com/Jleeblanch/kernel_motorola_sdm660/tree/twrp-lake
+
