@@ -56,8 +56,8 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     libz
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := lake
-PRODUCT_NAME := omni_ocean
+PRODUCT_DEVICE := channel
+PRODUCT_NAME := omni_channel
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G7 Plus
+PRODUCT_MODEL := Moto G7 Play
 PRODUCT_MANUFACTURER := Motorola
