@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/ocean
+DEVICE_PATH := device/motorola/channel
 
 # Architecture
 TARGET_ARCH := arm64
@@ -49,7 +49,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset $(BOARD_RAMD
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
 ifeq ($(strip $(TARGET_PREBUILT_KERNEL)),)
-TARGET_KERNEL_CONFIG := ocean_defconfig
+TARGET_KERNEL_CONFIG := channel_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/sdm660
 endif
 
