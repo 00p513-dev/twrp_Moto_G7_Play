@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter ocean, $(TARGET_DEVICE)),)
+ifneq ($(filter channel, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
